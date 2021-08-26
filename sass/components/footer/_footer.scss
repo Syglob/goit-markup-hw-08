@@ -1,0 +1,11 @@
+.footer {
+    padding: 60px 0;
+    background-color: $background-color;
+    &__container {
+        display: flex;
+    }
+    &__wrap {
+        display: inline-block;
+        margin-right: 70px;
+    }
+}

@@ -1,0 +1,49 @@
+.principles {
+    padding-top: 94px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $link-color;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $text-color;
+        margin-top: 10px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item::before {
+        content: "";
+        display: block;
+        height: 120px;
+        background-color: $button-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    &__item--antenna::before {
+        background-image: url(../img/svg_img/advan/antenna.svg);
+    }
+    &__item--clock::before {
+        background-image: url(../img/svg_img/advan/clock.svg);
+    }
+    &__item--diagram::before {
+        background-image: url(../img/svg_img/advan/diagram.svg);
+    }
+    &__item--astronaut::before {
+        background-image: url(../img/svg_img/advan/astronaut.svg);
+    }
+}
+

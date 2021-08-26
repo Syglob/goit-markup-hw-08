@@ -1,0 +1,49 @@
+/*============mail============*/
+.contacts {
+    display: flex;
+    margin-left: auto;
+    &__mail,
+    &__phone {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        transition: $animation-250ms;
+    }
+    &__mail:hover &__svg,
+    &__mail:focus &__svg {
+        fill: $link-active-color;
+    }
+    &__mail:hover,
+    &__mail:focus {
+        color: $link-active-color;
+    }
+    &__svg--phone {
+        height: 16px;
+        width: 10px;
+        margin-right: 10px;
+        fill: $text-color;
+    }
+    &__phone:focus &__svg,
+    &__phone:hover &__svg {
+        fill: $link-active-color;
+    }
+    &__phone:hover,
+    &__phone:focus {
+        color: $link-active-color;
+    }
+    &__mail {
+        margin-right: 50px;
+    }
+    &__svg--mail {
+        height: 12px;
+        width: 16px;
+        margin-right: 10px;
+        fill: $text-color;
+    }
+}
+
+/*==========contacts==========*/

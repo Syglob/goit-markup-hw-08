@@ -1,0 +1,9 @@
+.header {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $line-color;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+}

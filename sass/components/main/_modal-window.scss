@@ -1,0 +1,173 @@
+.modal {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: $white-color;
+    justify-content: flex-end;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    &__close {
+        position: absolute;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        margin-right: 8px;
+        margin-top: 8px;
+        background-color: $white-color;
+        align-items: center;
+        justify-content: center;
+    }
+    &__svg--close:hover,
+    &__svg--close:focus {
+        fill: $link-active-color;
+        transition-duration: $transition-duration;
+        transition-timing-function: $transition-timing-function;
+    }
+    &__input {
+        margin-left: auto;
+        margin-right: auto;
+        width: 448px;
+    }
+    &__description {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $link-color;
+        margin-top: 40px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    &__name {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $text-color;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    &__date {
+        border: $label-border-color;
+        border-radius: 4px;
+        height: 40px;
+        padding-left: 40px;
+        cursor: pointer;
+    }
+
+    &__date--comment {
+        resize: none;
+        height: 120px;
+        padding: 12px 16px;
+    }
+    &__btn {
+        width: 200px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background-color: $link-active-color;
+        color: $white-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+    &__btn:hover,
+    &__btn:focus {
+        background-color: #1e85da;
+        box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+        transition-duration: $transition-duration;
+        transition-timing-function: $transition-timing-function;
+    }
+    &__svg {
+        position: absolute;
+        transform: translate(12px, -11px);
+        bottom: 0;
+        width: 18px;
+        height: 18px;
+        fill: $link-color;
+    }
+    &__date:focus + .modal__svg {
+        fill: $link-active-color;
+        transition-duration: $transition-duration;
+    }
+    &__date:focus {
+        border: 1px solid $link-active-color;
+        transition-duration: $transition-duration;
+    }
+}
+
+.form-checkbox {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    &__checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+    &__agree {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid $link-color;
+        border-radius: 4px;
+    }
+
+    &__checkbox:checked + &__icon {
+        border-color: $link-active-color;
+        background-color: $link-active-color;
+        background-image: url(../img/svg_img/icon-check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        border-radius: 4px;
+        transition-duration: $transition-duration;
+    }
+
+    &__description {
+        margin-left: 10px;
+    }
+    &__license {
+        color: $link-active-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+    }
+
+    &__checkbox {
+        width: 16px;
+        height: 15px;
+    }
+    &__checkbox:focus,
+    &__checkbox:hover {
+        border: 1px solid $link-active-color;
+        border-radius: 4px;
+        transition-duration: $transition-duration;
+        cursor: pointer;
+    }
+}

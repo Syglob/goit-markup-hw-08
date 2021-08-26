@@ -1,0 +1,21 @@
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $address-color;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &__item--city {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $button-color;
+    }
+}
