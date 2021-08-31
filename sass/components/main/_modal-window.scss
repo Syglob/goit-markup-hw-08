@@ -4,8 +4,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    // min-width: 450px;
+    // min-height: 609px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: $white-color;
     justify-content: flex-end;
     border-radius: 4px;
@@ -169,5 +171,33 @@
         border-radius: 4px;
         transition-duration: $transition-duration;
         cursor: pointer;
+    }
+}
+
+@include respond-to(mobile) {
+    .modal {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-checkbox {
+        &__description {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+            color: $text-color;
+        }
+        &__license {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+            text-decoration-line: underline;
+            color: $link-active-color;
+        }
     }
 }
