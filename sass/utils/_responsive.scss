@@ -1,0 +1,15 @@
+@mixin respond-to($breakpoint) {
+    //if the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+        //Prints amedia query based on the value
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+
+    //if the key does not exist in the map
+    @else {
+        @warn "Unfotunately, no value coul be retrieved from"#{breakepoint}"."
+        +"Availeble breackpoints are:#{map-keys($breakepoints )}";
+    }
+}

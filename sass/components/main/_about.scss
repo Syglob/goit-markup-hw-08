@@ -1,7 +1,6 @@
 .about {
     text-align: center;
     justify-content: center;
-    flex-direction: column;
     padding: 94px 0;
     &__text {
         font-weight: 700;
@@ -38,5 +37,9 @@
         padding-bottom: 27px;
         bottom: 0;
         width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 }

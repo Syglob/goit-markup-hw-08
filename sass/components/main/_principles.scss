@@ -16,13 +16,13 @@
         color: $text-color;
         margin-top: 10px;
     }
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-    &__list {
-        display: flex;
-        justify-content: center;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 30px;
+    // }
+    // &__list {
+    //     display: flex;
+    //     justify-content: center;
+    // }
     &__item::before {
         content: "";
         display: block;
@@ -47,3 +47,18 @@
     }
 }
 
+@include respond-to(mobile) {
+    .principles {
+        &__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $link-color;
+        }
+    }
+}

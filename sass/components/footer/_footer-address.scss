@@ -5,8 +5,8 @@
     letter-spacing: 0.03em;
     color: $address-color;
     &__list {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
     }
     &__item:not(:last-child) {
         margin-bottom: 9px;
