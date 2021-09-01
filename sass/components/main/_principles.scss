@@ -62,7 +62,7 @@
         }
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and(max-width: 1200px) {
     .principles {
         &__list {
             display: flex;
@@ -73,6 +73,20 @@
             width: calc((100% - 30px * 2) / 2);
             margin-bottom: 30px;
             justify-content: center;
+        }
+    }
+}
+@media screen and (min-width: 1200px) and(max-width: 1920px) {
+    .principles {
+        display: flex;
+        &__item {
+        }
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+        &__list {
+            display: flex;
+            max-width: 1200px;
         }
     }
 }

@@ -52,18 +52,28 @@
     }
 }
 
-/*==========contacts==========*/
-
 @media screen and (max-width: 767px) {
     .contacts {
         display: none;
     }
 }
-
-@include respond-to(desktop) {
+@media screen and (min-width: 1200px) and(max-width: 1920px) {
     .contacts {
-        &__mail {
-            margin-right: 50px;
-        }
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+    }
+    .contacts__mail {
+        margin-right: 50px;
     }
 }
+
+// @include respond-to(desktop) {
+//     .contacts {
+//         &__mail {
+//             display: flex;
+//             flex-direction: row;
+//             margin-right: 50px;
+//         }
+//     }
+// }

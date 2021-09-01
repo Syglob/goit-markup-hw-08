@@ -12,7 +12,7 @@
     // }
 }
 
-@include respond-to(mobile) {
+@media screen and (min-width: 200px) and(max-width: 1200px) {
     .footer {
         &__container {
             display: flex;
@@ -52,6 +52,45 @@
             // margin-left: auto;
             // margin-right: auto;
             margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (min-width: 480px) and(max-width: 1200px) {
+    .footer {
+        &__container {
+            // display: inline-block;
+        }
+        &__wrap {
+            position: relative;
+            display: inline-block;
+            margin-right: auto;
+            margin-left: 30px;
+            margin-bottom: 60px;
+        }
+    }
+    .footer-social {
+        position: absolute;
+        right: 0;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: 1200px) and(max-width: 1920px) {
+    .footer {
+        // display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        &__container {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            // flex-direction: column;
+            // align-items: center;
+        }
+        &__wrap {
+            display: inline-block;
+            margin-right: 70px;
         }
     }
 }

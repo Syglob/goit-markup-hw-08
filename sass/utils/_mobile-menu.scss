@@ -29,7 +29,9 @@
     border-radius: 50%;
     outline: none;
 }
-
+.menu-toggle:hover svg {
+    fill: $link-active-color;
+}
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;

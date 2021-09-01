@@ -22,17 +22,6 @@
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        @include respond-to(mobile) {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 42px;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: $white-color;
-        }
     }
     &__button {
         background-color: $link-active-color;
@@ -63,6 +52,7 @@
     .banner {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../img/mobile-bg.jpg);
+        background-size: cover;
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -71,6 +61,50 @@
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../img/mobile-bg@2x.jpg);
             }
+        }
+    }
+}
+@media screen and (min-width: 768px) and(max-width: 1200px) {
+    .banner {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../img/tablet-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .banner {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../img/tablet-bg@2x.jpg);
+            }
+        }
+    }
+}
+@media screen and (min-width: 200px) and(max-width: 1200px) {
+    .hero {
+        &__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $white-color;
+        }
+    }
+}
+@media screen and (min-width: 1200px) and(max-width: 1920px) {
+    .banner {
+        &__title {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $white-color;
         }
     }
 }

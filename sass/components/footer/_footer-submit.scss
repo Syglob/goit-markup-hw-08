@@ -11,7 +11,7 @@
     }
     &__inpute {
         height: 50px;
-        width: 358px;
+        min-width: 350px;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         background-color: $background-color;
@@ -51,5 +51,17 @@
     &__btn:focus {
         background-color: #1e85da;
         transition-duration: $transition-duration;
+    }
+}
+@media screen and (min-width: 1200px) and(max-width: 1920px) {
+    .submit-footer {
+        margin-left: 90px;
+        &__wrapper {
+            display: flex;
+            margin-top: 20px;
+        }
+        &__inpute {
+            margin-right: 16px;
+        }
     }
 }
