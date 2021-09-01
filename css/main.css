@@ -111,7 +111,7 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1600px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -1749,7 +1749,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1900px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
   .portfolio__list {
     display: -webkit-box;
     display: -ms-flexbox;
