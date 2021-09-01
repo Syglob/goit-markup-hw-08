@@ -5,11 +5,18 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navigation {
         display: none;
     }
+}
+
+@include respond-to(mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
 }

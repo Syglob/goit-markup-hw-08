@@ -9,3 +9,16 @@
 .header__studio {
     color: $black-color;
 }
+// @include respond-to(desktop) {
+//     .header__logo {
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
+
+@media screen and (min-width: 1200px) {
+    .header__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

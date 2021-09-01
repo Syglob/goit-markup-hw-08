@@ -33,3 +33,9 @@
         bottom: -33px;
     }
 }
+
+@include respond-to(tablet) {
+    .navigation {
+        margin-left: auto;
+    }
+}

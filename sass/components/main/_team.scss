@@ -97,5 +97,23 @@
         &__item {
             margin-bottom: 30px;
         }
+        &__item > img {
+            display: inline-block;
+        }
+    }
+}
+
+.team {
+    @include respond-to(tablet) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__list > li {
+            width: calc((100% - 15px * 2) / 2);
+            margin-bottom: 30px;
+            justify-content: center;
+        }
     }
 }

@@ -35,9 +35,9 @@
     &__phone:focus {
         color: $link-active-color;
     }
-    &__mail {
-        margin-right: 50px;
-    }
+    // &__mail {
+    //     margin-right: 50px;
+    // }
     &__svg--mail {
         height: 12px;
         width: 16px;
@@ -45,9 +45,25 @@
         fill: $text-color;
     }
 }
-@media screen and (max-width: 768px) {
+@include respond-to(tablet) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*==========contacts==========*/
+
+@media screen and (max-width: 767px) {
     .contacts {
         display: none;
     }
 }
-/*==========contacts==========*/
+
+@include respond-to(desktop) {
+    .contacts {
+        &__mail {
+            margin-right: 50px;
+        }
+    }
+}

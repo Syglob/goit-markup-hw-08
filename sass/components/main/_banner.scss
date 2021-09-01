@@ -58,7 +58,8 @@
         box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
     }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 767px) {
     .banner {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../img/mobile-bg.jpg);
