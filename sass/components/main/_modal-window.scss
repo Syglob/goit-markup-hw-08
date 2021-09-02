@@ -6,8 +6,8 @@
     transform: translate(-50%, -50%);
     // min-width: 450px;
     // min-height: 609px;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
     background-color: $white-color;
     justify-content: flex-end;
     border-radius: 4px;
@@ -157,7 +157,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.01em;
         text-decoration-line: underline;
     }
 
@@ -181,13 +181,17 @@
         margin-right: auto;
         max-width: 480px;
     }
+    .modal__input {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
     .form-checkbox {
         &__description {
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
             line-height: 14px;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.01em;
             color: $text-color;
         }
         &__license {
@@ -196,7 +200,7 @@
             font-weight: normal;
             font-size: 12px;
             line-height: 14px;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.01em;
             text-decoration-line: underline;
             color: $link-active-color;
         }
@@ -205,5 +209,9 @@
 @media screen and (min-width: 768px) and(max-width: 1200px) {
     .modal {
         max-width: 480px;
+    }
+    &__input {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
